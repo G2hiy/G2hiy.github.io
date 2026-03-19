@@ -139,6 +139,9 @@
     <div class="sidebar">
       <img src="{{ site.avatar }}" class="avatar" alt="Profile Photo">
       <div class="links">
+        {% if site.footer-links.wechat %}
+          <a href="mailto:{{ site.footer-links.WeChat }}">WeChat</a> |
+        {% endif %}
         {% if site.footer-links.email %}
           <a href="mailto:{{ site.footer-links.email }}">Email</a> |
         {% endif %}
